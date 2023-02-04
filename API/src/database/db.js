@@ -1,5 +1,4 @@
 const { Sequelize } = require('sequelize');
-// const { database } = require('../../config');
 const dotenv = require('dotenv').config();
 
 const sequelize = new Sequelize(
