@@ -63,7 +63,7 @@ const FormEdit = ({ itemName, isImg }) => {
     setIsUploading(true);
     try {
       const response = await axios.post(
-        "http://localhost:3001/form/uploadimg",
+        "https://prodeman-api.onrender.com/uploadimg",
         { data: base64EncodedImage }
       );
       setFormData({
@@ -110,7 +110,7 @@ const FormEdit = ({ itemName, isImg }) => {
     }
     try {
       const result = await axios.post(
-        "http://localhost:3001/form/result",
+        "https://prodeman-api.onrender.com/result",
         formData
       );
       if (result.data) {

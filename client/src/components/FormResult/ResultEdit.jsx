@@ -44,7 +44,7 @@ const ResultEdit = ({
       reader.onloadend = async () => {
         setPreviewSource(reader.result);
         const response = await axios.post(
-          "http://localhost:3001/form/uploadimg",
+          "https://prodeman-api.onrender.com/uploadimg",
           {
             data: reader.result,
           }
@@ -74,7 +74,7 @@ const ResultEdit = ({
 
     try {
       const resultEdit = await axios.patch(
-        "http://localhost:3001/form/editresult",
+        "https://prodeman-api.onrender.com/editresult",
         formValues
       );
       if (resultEdit.data[0] === 1) {

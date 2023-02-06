@@ -52,7 +52,7 @@ const Registration = () => {
 
     try {
       const user = await axios.post(
-        "http://localhost:3001/api/user/signup",
+        "https://prodeman-api.onrender.com/signup",
         formData
       );
       if (user.data === "username already taken") {

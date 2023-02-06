@@ -16,7 +16,7 @@ const Login = () => {
     event.preventDefault();
 
     try{
-        const user =  await axios.post('http://localhost:3001/api/user/login', {email, password})
+        const user =  await axios.post('https://prodeman-api.onrender.com/login', {email, password})
         if(user.data){
             localStorage.setItem("user", JSON.stringify(user.data))
             dispatch(saveUser())
