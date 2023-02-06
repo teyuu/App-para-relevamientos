@@ -18,47 +18,46 @@ que relevo el dato
 - Debe existir un perfil que monitoree los resultados obtenidos
 - Una vez cerrada la visita no se puede editar ni agregar nuevos datos
 - Las posibles respuestas para cada ítem a relevar son:
-o Si
-o No
-o Observaciones
+-Si
+- No
+- Observaciones
 - En caso que diga “Tomar Foto” permitir adjuntar una foto asociada al ítem
 Los puntos a medir se dividen en CategoriasSubcategorias:
- Casa Principal
-o Rack Principal (limpieza) – TOMAR FOTO
-o Rack Principal (Orden) – TOMAR FOTO
-o Funcionamiento AP
-o Funcionamiento teléfono
-o UPS
- ExAgroinsumos
-o Rack Principal (limpieza) – TOMAR FOTO
-o Rack Principal (orden) – TOMAR FOTO
-o Funcionamiento AP
- Taller
-o Rack Principal (limpieza) – TOMAR FOTO
-o Rack Principal (orden) – TOMAR FOTO
-o Funcionamiento teléfono
-o Funcionamiento AP
- Hangar
-o Rack Principal (limpieza) – TOMAR FOTO
-o Rack Principal (orden) – TOMAR FOTO
-o Funcionamiento AP
-o Funcionamiento teléfono
- Hangar Oficina
-o Funcionamiento teléfono
-o Limpiar PC– TOMAR FOTO
-o Acomodar cables– TOMAR FOTO
-
- Balanza
-o Rack Principal (limpieza) – TOMAR FOTO
-o Rack Principal (orden) – TOMAR FOTO
-o Funcionamiento AP
-o Limpiar PC– TOMAR FOTO
-o UPS
-o Funcionamiento teléfono
- Agroinsumos
-o Funcionamiento AP
- Camaras
-o Chequear visualizacion
+* Casa Principal
+- Rack Principal (limpieza) – TOMAR FOTO
+- Rack Principal (Orden) – TOMAR FOTO
+- Funcionamiento AP
+- Funcionamiento teléfono
+- UPS
+* ExAgroinsumos
+- Rack Principal (limpieza) – TOMAR FOTO
+- Rack Principal (orden) – TOMAR FOTO
+- Funcionamiento AP
+* Taller
+- Rack Principal (limpieza) – TOMAR FOTO
+- Rack Principal (orden) – TOMAR FOTO
+- Funcionamiento teléfono
+- Funcionamiento AP
+* Hangar
+- Rack Principal (limpieza) – TOMAR FOTO
+- Rack Principal (orden) – TOMAR FOTO
+- Funcionamiento AP
+- Funcionamiento teléfono
+* Hangar Oficina
+- Funcionamiento teléfono
+- Limpiar PC– TOMAR FOTO
+- Acomodar cables– TOMAR FOTO
+* Balanza
+- Rack Principal (limpieza) – TOMAR FOTO
+- Rack Principal (orden) – TOMAR FOTO
+- Funcionamiento AP
+- Limpiar PC– TOMAR FOTO
+- UPS
+- Funcionamiento teléfono
+* Agroinsumos
+- Funcionamiento AP
+* Camaras
+- Chequear visualizacion
 
 Tecnologías para el desarrollo:
 - Node
