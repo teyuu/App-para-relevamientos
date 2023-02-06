@@ -65,4 +65,4 @@ Tecnologías para el desarrollo:
 - Javascript
 - Sequelize
 - React
-- SQL Server/MySQL
+- MySQL
