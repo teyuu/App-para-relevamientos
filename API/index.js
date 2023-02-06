@@ -1,7 +1,7 @@
 const app = require('./src/app');
 const db = require('./src/database/db');
 const dotenv = require('dotenv').config()
-const port = process.env.PORT;
+const port = process.env.PORT || 3001;
 
 
 //arrancamos el servidor

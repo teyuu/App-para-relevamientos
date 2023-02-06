@@ -3,6 +3,7 @@ import { Button, Form, FormControl, Container, Row, Col, Table } from 'react-boo
 import axios from 'axios';
 import { useParams,  Link, useNavigate} from 'react-router-dom';
 import UserResults from './UserResults';
+import NavBar from '../NavBar/NavBar';
 
 
 
@@ -45,6 +46,7 @@ const Admin = () => {
 console.log(selectedUser)
   return (
     <Container>
+      <NavBar/>
       <Row>
         <Col xs={3}>
           <Form>
@@ -73,25 +75,16 @@ console.log(selectedUser)
               </thead>
               <tbody>
                 {users?.map((user, index) => (
-                  <tr key={index}  style={{ cursor: 'pointer' }}>
+                  <tr key={index}>
                     <td>{user.userName}</td>
                     <td>{user.email}</td>
                     <Link className='btn' to={`/user/${user.id}`}>
-                    <td>Ver resultados</td>
+                    <button>Ver resultados</button>
                     </Link>
                   </tr>
                 ))}
               </tbody>
             </Table>
-          )}
-          {selectedUser && (
-
-            <div>
-            <h3>Información de Usuario:</h3>
-            <p>Nombre: </p>
-            <p>Edad: </p>
-            <p>Posición: </p>
-          </div>
           )}
           </Col>
           </Row>
