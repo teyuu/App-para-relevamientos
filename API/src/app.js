@@ -22,7 +22,7 @@ app.use((req, res, next) => {
 });
 
 //ROUTES
-app.use('/form', require('./routes/form'))
+app.use('/form', require('./routes/formRoutes'))
 app.use('/results', require('./routes/resultados'))
 app.use('/api/user', require('./routes/userRoutes'))
 

@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import FormEdit from "./FormEdit";
 import ResultEdit from "./ResultEdit";
+import { v4 as uuidv4 } from 'uuid';
 
 const FormResult = () => {
   const currentPlace = useSelector((state) => state.currentPlace[0]);
@@ -72,6 +73,7 @@ const FormResult = () => {
     const { name } = currentPlace[0];
     const { elements: filteredElements } =
       elements.find((e) => e.place === name) || {};
+      console.log(currentPlace[0].name)
     return (
       <div className="container text-center border">
         <h5 className="text-center">Usted se encuentra actualmente en: </h5>
@@ -79,23 +81,22 @@ const FormResult = () => {
         {/* ---------------------------------------------------------- */}
         <div className="row">
           {filteredElements?.map((e) => (
-            <div key={e[0]} className="col-12 col-md-6 mb-3">
-              <FormEdit itemName={e[0]} isImg={e[1]} />
-            </div>
+              <FormEdit key={uuidv4()} itemName={e[0]} isImg={e[1]} />
           ))}
         </div>
         {/* ---------------------------------------------------------- */}
         <h2>Editar resultados </h2>
-        <div className="d-flex gap-3 flex-column flex-lg-row align-items-center">
+        <div className="d-flex flex-wrap gap-3 justify-content-center">
           {results?.map((e) => {
             return (
               <ResultEdit
-                key={e.id}
+                key={uuidv4()}
                 item_relevar={e.item_relevar}
                 decision={e.decision}
                 observaciones={e.observaciones}
                 placeId={e.placeId}
                 userId={e.userId}
+                imagen={e.imagen}
               />
             );
           })}

@@ -49,6 +49,7 @@ const MyForm = () => {
                 <FormGroup>
                   <FormLabel>Selecciona una opción:</FormLabel>
                   <FormControl as="select" value={selectedOption} onChange={e => handleOptionChange(e.target.value)}>
+                    <option>Seleccione una opcion</option>
                     {options.map((option) => (
                       <option key={option.value} value={option.value}>
                         {option.label}

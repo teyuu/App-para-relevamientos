@@ -14,6 +14,7 @@ const NavBar = () => {
         localStorage.clear()
         dispatch(saveUser())
         navigate('/')
+        window.location.reload()
     }
 
   return (

@@ -7,7 +7,8 @@ Result.init({
 
     item_relevar: DataTypes.STRING,
     decision: DataTypes.STRING,
-    observaciones: DataTypes.TEXT
+    observaciones: DataTypes.TEXT,
+    imagen: DataTypes.STRING
 },{
     sequelize: db,
     modelName:"result",

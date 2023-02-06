@@ -36,7 +36,7 @@ const Login = () => {
     <Container>
       <Row className="justify-content-md-center">
         <Col sm={6} >
-        <h3 className="text-decoration-underline">Bienvenido a la plataforma de relevamiento de equipos</h3>
+        <h3 className="text-decoration-underline">Bienvenido a la plataforma de relevamiento y funcionamiento de equipos informaticos</h3>
         <p >Inicie sesion o registrese para continuar</p>
         <Button onClick={()=>navigate('/register')} className="mt-2" variant="primary">
               Registrarse
