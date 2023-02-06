@@ -1,25 +1,19 @@
 const { Sequelize } = require('sequelize');
+require('dotenv').config();
 
 const {
-    MYSQL_URL
-  } = process.env;
+  MYSQLDATABASE, MYSQLHOST, MYSQLPASSWORD, MYSQLPORT, MYSQLUSER
+} = process.env;
 
 const sequelize = new Sequelize(
-   MYSQL_URL
-,
-   {
-    logging: false, // set to console.log to see the raw SQL queries
-    native: false, // lets Sequelize know we can use pg-native for ~30% more speed
-   
-    dialectOptions: {
-      ssl: {
-        require: true,
-        rejectUnauthorized: false,
-      }
-    },
-  
+  {
+    username:MYSQLUSER,
+    password:MYSQLPASSWORD,
+    database:MYSQLDATABASE,
+    dialect:'mysql',
+    port:MYSQLPORT,
+    host:MYSQLHOST
   }
-   
 );
 
 module.exports = sequelize;
