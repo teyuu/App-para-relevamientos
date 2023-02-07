@@ -19,7 +19,7 @@ const Admin = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`http://localhost:3001/api/user/getusers/${selectedTeam}`);
+        const response = await axios.get(`https://prodeman-api.onrender.com/${selectedTeam}`);
         setUsers(response.data);
       } catch (error) {
         console.error(error);

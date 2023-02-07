@@ -24,7 +24,7 @@ export function logOutUser(){
 export  function  getResults(){
 
     return async function (dispatch) {
-        var json = await axios.get(`http://localhost:3001/form/results`);
+        var json = await axios.get(`https://prodeman-api.onrender.com/form/results`);
         return dispatch({
             type: 'GET_RESULTS',
             payload: json.data
@@ -35,7 +35,7 @@ export  function  getResults(){
 export  function  getResultsUser(payload){
 
     return async function (dispatch) {
-        var json = await axios.post(`http://localhost:3001/results`, payload);
+        var json = await axios.post(`https://prodeman-api.onrender.com/results`, payload);
         return dispatch({
             type: 'GET_RESULTS',
             payload: json.data

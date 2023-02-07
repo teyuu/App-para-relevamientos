@@ -28,7 +28,7 @@ const MyForm = () => {
     e.preventDefault()
 
     try{
-      const result = await axios.post('http://localhost:3001/form/place', {name:selectedOption, userId: user[0].id})
+      const result = await axios.post('https://prodeman-api.onrender.com/place', {name:selectedOption, userId: user[0].id})
       if(result.data){
         dispatch(savePlace(result.data))
         dispatch(getResultsUser({userId:result.data[0].userId, placeId:result.data[0].id}))

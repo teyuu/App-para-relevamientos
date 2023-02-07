@@ -18,4 +18,24 @@ const editresult =  (req, res) => {
 
 }
 
-module.exports = {editresult}
+const deleteResult = (req, res) =>{
+    const {id} = req.body;
+
+    try{
+        Result.destroy({
+            where:{id : id}
+        }).then(response=>{
+            res.json(response)
+        }).catch(e=>{
+            res.json(e)
+        }).catch(err=>{
+            res.json({mgs:'error'},err)
+        })
+
+    }catch(error){
+        console.log(error)
+    }
+}
+
+
+module.exports = {editresult,deleteResult}

@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const { uploadImg, postPlace, postResult } = require('../controllers/formPostController')
-const { getUserResults, getAllResults } = require('../controllers/getDataController')
-const { editresult } = require('../controllers/editFormController')
+const { getUserData, getAllResults } = require('../controllers/getDataController')
+const { editresult, deleteResult } = require('../controllers/editFormController')
 
 //Post routes
 
@@ -11,10 +11,13 @@ router.post('/place', postPlace);
 router.post('/result', postResult);
 
 //Get routes
-router.get('/users', getUserResults)
-router.get('/results', getAllResults)
+router.get('/users', getUserData);
+router.get('/results/:id?', getAllResults);
 
 //Patch routes
-router.patch('/editresult', editresult)
+router.patch('/editresult', editresult);
+
+//Delete
+router.delete('/delete', deleteResult);
 
 module.exports = router;
