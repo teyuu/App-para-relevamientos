@@ -1,5 +1,12 @@
 # Prodeman challenge
 
+Tecnologías para el desarrollo:
+- Node
+- Javascript
+- Sequelize
+- React
+- MySQL
+
 <h5>CONSIGA: </h5>
 
 Cada cierto periodo de tiempo, el equipo de Microinfomatica y Telecomunicaciones realiza un
@@ -59,9 +66,3 @@ Los puntos a medir se dividen en CategoriasSubcategorias:
 * Camaras
 - Chequear visualizacion
 
-Tecnologías para el desarrollo:
-- Node
-- Javascript
-- Sequelize
-- React
-- MySQL
